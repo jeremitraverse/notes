@@ -4,6 +4,8 @@
   - Increase auto-amelioration
   - Increase the effectivness of our problem detection mechanism
   - Increase resiliency
+  - Pay technical debts
+    - Blitz, hackathon, conferences, internal coaching
 
 - Chaos Monkey
   - Randomly putting down servers to test the resiliency of our app
@@ -24,6 +26,3 @@
     - Github
     - Wikis
     - Lunch and learn
-
- 
-

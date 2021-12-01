@@ -1,0 +1,8 @@
+## FIRST WAY
+- Dev send changed to ops
+  - Infrastructure problems, because often created manually
+    - Takes time because ops engineer are busy and understaff
+    - Prone to low quality
+      - Human error
+      - All the good practice that we have for the codebase won't
+        be applied to the infrastructure

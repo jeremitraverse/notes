@@ -1,0 +1,11 @@
+# CHATOPS
+- Can use software like Slack with bots to keep us up to date on deployments status
+- Not only for deployments, but generally for all of the ops practices (telemetries, server status)
+
+## PROS
+- Leave trails about when/why for each deployments
+- Facilitate the integration of new devs
+
+## Normalized processes automation
+- Instead of having docs about different practices (naming convention, space vs tabs..)
+  we use tools that automate these processes (linters, security breach detection etc..)
