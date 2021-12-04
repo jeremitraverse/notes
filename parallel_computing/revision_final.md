@@ -17,7 +17,8 @@ même temps? Comment?
 
 5. Quel est l’équivalent du ID d’une tâche pour OpenCL? Est-ce aussi possible de l’obtenir en 
 plusieurs dimensions? Si oui, comment? 
-  - Oui, avec getGlobalId 0 = x, 1 = y, 2 = z
+  - Oui, avec getGlobalId 0 = x, 1 = y, 2 = z, pas besoin de passer par la danse de calcul
+  necessaire en CUDA pour obtenir le id du thread
 
 6. Considérons l'addition de matrices où chaque élément de la matrice de sortie est la somme 
 des éléments correspondants des deux matrices d'entrée. Peut-on utiliser la mémoire partagée 
@@ -33,7 +34,8 @@ globale. Expliquez votre réponse.
     vers ses registres, alors on a plus d'acces en memoire globale que si on copiait de la memoire
     globale vers la memoire partagee
 
-8. Imaginez que vous devez écrire un filtre de convolution 2D pour traiter une image de taille 76x62.   a) 5 x 4
+8. Imaginez que vous devez écrire un filtre de convolution 2D pour traiter une image de taille 76x62.
+  a) 5 x 4
   b) 3 x 2
   c) 
     - a -> (76 * 32) - (16 * 16 * 20) 
@@ -44,9 +46,8 @@ Parmi les configurations de blocs suivantes, laquelle entraînerait le plus gran
 threads dans le SM ? le plus grand nombre de threads dans le SM ?
   - C), parce qu'on pourrait avoir 3 threads par bloc et avoir un occupancy de 100%. 3 * 512 = 1536
 
-10. 
-  A) Dans le dernier bloc, le  
-  C) 256 - 7
+10. A) Dans le dernier bloc, le  
+    C) 256 - 7
 
 11. Dans une implémentation OpenCL, avons-nous besoin d'une barrière synchronisation avant 
 l'exécution du kernel pour garantir que les données ont été transférées de l'hôte vers le 
