@@ -82,3 +82,9 @@ sont les principales variables impliquées ? Existe-t-il une relation entre ces 
 18. Vrai ou Faux : La taille d’un carreau dans l’algorithme de multiplication de matrice par 
 carreaux est limitée par la taille d’un bloc de thread. 
   - Faux, un thread peut traiter plus qu'une valeure
+
+21. Pour la multiplication de matrice (C = A * B) avec l’algorithme des carreaux (tiling) basée 
+sur une disposition rangée-major, quelle matrice d'entrée aura des accès à la mémoire globale 
+coalescés ? Est-ce que ça change avec l’implémentation simple (sans utilisation des carreaux 
+et de la mémoire partagée)?
+  - acces mémoire globale coalescés: acces consecutif
